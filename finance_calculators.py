@@ -32,9 +32,10 @@ if option.lower() == "investment":
     # Nested if-elif statement to prompt user to choose simple or compound interest
     if interest.lower() == "simple":
         total = deposit*(1+interest_rate*years)
+        print(round(total, 2))
     elif interest == "compound":
         total = deposit*math.pow((1+interest_rate), years)
-        print(total)
+        print(round(total, 2))
 
 # elif statement if user chooses bond option
 elif option.lower() == "bond":
